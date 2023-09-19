@@ -1,2 +1,1 @@
-### Java_Calc
-##### A simple calculator for KATA Academy
+##### A simple calculator in java for KATA Academy
