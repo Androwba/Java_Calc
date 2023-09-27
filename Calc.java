@@ -117,21 +117,16 @@ class Main {
     }
   }
 
-  public static void main(String[] args) {
+public static void main(String[] args) throws IOException {
     Scanner scanner = new Scanner(System.in);
     try {
-      while (true) {
-        System.out.println("Enter operation:");
-        String input = scanner.nextLine();
-        try {
-          System.out.println(calc(input));
-        } catch (IOException e) {
-          System.out.println("Error: " + e.getMessage());
-          break;
+        while (true) {
+            System.out.println("Enter operation:");
+            String input = scanner.nextLine();
+            System.out.println(calc(input));
         }
-      }
     } finally {
-      scanner.close();
+        scanner.close();
     }
   }
 }
